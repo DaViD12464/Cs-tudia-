@@ -1,5 +1,5 @@
 // zad 1
-
+//function will welcome you after you type in your name
 #include <stdio.h>
 int main() {
 char name[20];
