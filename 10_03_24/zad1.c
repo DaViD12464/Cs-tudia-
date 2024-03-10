@@ -5,7 +5,7 @@
 int main() {
 //declared int x
     int x = 1;
-//created pointer
+//created pointer to integer
     int *pX = &x;
 //changed value of x using pointer
     *pX += 1;

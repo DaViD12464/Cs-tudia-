@@ -7,6 +7,7 @@ void modifyFloat(float *x)
  printf("Value of number after getting modified: %.2f\n", *x);
 }
 
+//main (declaration of float)
 int main()
 {
     float x = 5;
