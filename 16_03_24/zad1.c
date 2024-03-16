@@ -23,7 +23,7 @@ void displayPT(int height)
 int main(){
     int x =0;
     printf("How high you want the Pascal's triangle to be?\n");
-    scanf_s("%d", &x);
+    scanf("%d", &x);
 
     displayPT(x);
     return 0;
