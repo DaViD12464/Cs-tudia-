@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int calc(char *line) {
@@ -13,19 +12,21 @@ int calc(char *line) {
         }
     }
 
-    for(int i= length; i>=0;i--) {
+    for(int i= length -1; i >= 0;i--) {
         if(line[i] >= '0' && line[i] <= '9') {
             lastval = line[i] - '0';
             break;
         }
     }
-    return firstval *10 +lastval;
+    int value = firstval *10 + lastval;
+    printf("Number: %d\n", value);
+    return value;
 }
 
 int main() {
     int sum = 0;
 
-    FILE *file = fopen("input.txt", "r");
+    FILE *file = fopen("D:\\C i C++\\Cs-tudia-\\Zadania_7\\input.txt", "r");
 
     if (file == NULL) {
         printf("Cannot find file with provided name!\n");
